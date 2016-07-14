@@ -1,0 +1,10 @@
+#include<stdio.h>
+main()
+{
+	float avgprofit;
+	int profitperpumpkin=10;
+	int sales=59;
+	int workingday=7;
+	avgprofit=(profitperpumpkin*sales)/workingday;
+	printf("avg profit per day:%.2f",avgprofit);
+}

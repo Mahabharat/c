@@ -1,0 +1,17 @@
+#include<stdio.h>
+
+main()
+{
+	int tuna=10;
+	printf("name\tvalue\t\taddress\n");
+	printf("%s\t %d\t\t %p\n","tuna",tuna,&tuna);
+	
+	int *ptuna;
+	ptuna=&tuna;
+	printf("%s\t %p\t %p\n","ptuna",ptuna,&ptuna);
+	
+	//dereferencing pointer
+	printf(" %d ",*ptuna);
+	*ptuna=11;
+	printf(" %d ", tuna);
+}

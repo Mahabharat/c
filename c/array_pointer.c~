@@ -1,0 +1,24 @@
+#include<stdio.h>
+
+main()
+{
+	int arr[5]={22,33,44,55,66};
+	
+	int i;
+	
+	printf("index\t address\t value");
+	for(i=0;i<5;i++)
+	{
+		printf("arr[%d]\t %p\t %d\n",i, &arr[i], arr[i]);
+	}
+	
+	//array name is the pointer of the first element
+	printf("\narr=%p\n",arr);
+	printf("arr+1=%p\n",arr+1);
+	printf("arr+2=%p\n",arr+2);
+	//dereferencing
+	printf("*arr=%d\n",*arr);
+	printf("*(arr+2)=%d\n",*(arr+2));
+}
+	
+	

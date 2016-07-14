@@ -1,0 +1,27 @@
+#include<stdio.h>
+#include<string.h>
+
+struct details
+{
+	int userID;
+	char Name[15];
+	int age;
+	float weight;
+};
+
+main()
+{
+	struct details bucky;
+	bucky.userID=1;
+	puts("Enter user's name");
+	gets(bucky.Name);
+	//bucky.Name[15]="Bucky";//assignment operator doesn't work
+	bucky.age=27;
+	bucky.weight=57.6;
+	
+	printf("userID:%d\n",bucky.userID);
+	printf("Name is:%s\n",bucky.Name);
+	printf("age is:%d\n",bucky.age);
+	printf("weight is:%.2f\n",bucky.weight);
+}
+	 

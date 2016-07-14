@@ -1,0 +1,21 @@
+#include<stdio.h>
+#include<string.h>
+main()
+{
+	char name[7];
+	char *p=name;//no need &, becoz it already address of the first element=&name[0]
+	
+	puts("Enter yourName");
+	gets(p);
+	printf("MY NAME IS=%s\n",p);
+	
+	puts("Enter yourName");
+	fgets(p, 7, stdin);//or(name, 7, stdin)...........(pointer, size, stdin)
+	printf("MY NAME IS=%s\n",p);
+	
+	
+	
+	
+}
+	
+	

@@ -1,0 +1,25 @@
+#include<stdio.h>
+#include<stdlib.h>
+
+main()
+{
+	int i, n;
+	int total=0;
+	float average;
+	printf("Enter total number of elements:");
+	scanf(" %d", &n);
+	
+	int *array;
+	array=(int *)malloc(n*sizeof(int));
+	
+	printf("Enter the %d elements\n",n);
+	for(i=0;i<n;i++)
+	{
+		scanf(" %d", &array[i]);
+		total+=array[i];
+	}
+	average=(float)total/(float)n;
+	printf("%f\n",average);
+	
+	free(array);
+}

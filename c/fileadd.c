@@ -1,0 +1,19 @@
+#include<stdio.h>
+
+main()
+{
+	FILE *fp;
+	fp=fopen("Parth.txt","a");
+	fprintf(fp,"-PPP");
+	fclose(fp);
+	
+	
+	fp=fopen("Parth.txt","r");
+	char string[20];
+	while(!feof(fp))
+	{
+		fgets(string,20,fp);
+		puts(string);
+	}
+	fclose(fp);
+}
